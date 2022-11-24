@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pylint = "*"
+flake8 = "*"
+fastapi = "*"
+uvicorn = "*"
+pre-commit = "*"
+pytest = "*"
+environs = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
