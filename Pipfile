@@ -11,6 +11,7 @@ uvicorn = "*"
 pre-commit = "*"
 pytest = "*"
 environs = "*"
+httpx = "*"
 
 [dev-packages]
 
