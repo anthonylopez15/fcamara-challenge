@@ -1,10 +1,10 @@
-from src.application import HttpRequest, HttpResponse
-from src.controller.handler_interface import HandlerInterface
-from src.use_case import UseCaseInterface
+from src.application.helpers import HttpRequest, HttpResponse
+from src.controllers.handler_interface import HandlerInterface
+from src.use_case import UsersUseCasesInterface
 
 
 class FindWebSitesController(HandlerInterface):
-    def __init__(self, service: UseCaseInterface):
+    def __init__(self, service: UsersUseCasesInterface):
         self.service = service
 
     def handle(self, http_request: HttpRequest) -> HttpResponse:

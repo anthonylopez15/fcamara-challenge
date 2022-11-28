@@ -1,9 +1,9 @@
-from src.adapter import RepositoryInterface
-from src.use_case.use_case_interface import UseCaseInterface
+from src.repository import UserRepositoryInterface
+from src.use_case.use_case_interface import UsersUseCasesInterface
 
 
-class Service(UseCaseInterface):
-    def __init__(self, repository: RepositoryInterface):
+class UserUseCases(UsersUseCasesInterface):
+    def __init__(self, repository: UserRepositoryInterface):
         self.repository = repository
 
     def find_all(self):

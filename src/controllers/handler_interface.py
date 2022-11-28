@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-from src.application import HttpRequest, HttpResponse
+from src.application.helpers import HttpRequest, HttpResponse
 
 
 class HandlerInterface(ABC):

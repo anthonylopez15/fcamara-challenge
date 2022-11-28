@@ -10,7 +10,6 @@ fastapi = "*"
 uvicorn = "*"
 pre-commit = "*"
 pytest = "*"
-environs = "*"
 httpx = "*"
 
 [dev-packages]

@@ -1,11 +1,11 @@
 from typing import List
 
-from . import RepositoryInterface
-from src.application import ConnectionHandler
+from . import UserRepositoryInterface
+from src.application.helpers import ConnectionHandler
 from src.entity import Users, DetailUser, UserSearch, WebSites
 
 
-class Repository(RepositoryInterface):
+class UserRepository(UserRepositoryInterface):
     def __init__(self):
         self.__connection = ConnectionHandler()
         self.source = self.__connection.response

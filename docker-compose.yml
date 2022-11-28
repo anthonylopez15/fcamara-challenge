@@ -1,0 +1,11 @@
+version: "3.3"
+services:
+
+  api:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    privileged: true
+    container_name: challenge-fcamara
+    ports:
+      - 8000:8000

@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
 
-class RepositoryInterface(ABC):
+class UserRepositoryInterface(ABC):
     @abstractmethod
     def find_all(self):
         raise Exception("Should implement method")
